@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!--<h:outputStylesheet library="css" name="styles.css"/>
+        <h:outputScript library="js" name="jsfunctions.js"/>-->
+        <title>
+            <ui:insert name="projectTitle">
+                :: Guia Brasil ::
+            </ui:insert>
+        </title>
+
+    </h:head>
+
+    <h:body >
+
+        <table border="0" cellpadding="0" cellspacing="0" width="800px;" align="center">
+            <tr>
+                <td colspan="2" style="height: 68px;">
+                    <!-- HEADER -->
+                    <!--<ui:insert name="tplHead">
+                        <ui:include src="/operation/shared/default/header.xhtml"/>
+                    </ui:insert>-->
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    
+                    <!--<ui:insert name="tplPath">
+                        <ui:include src="/operation/shared/caminho.xhtml"/>
+                    </ui:insert>-->
+                </td>
+            </tr>
+            <tr>
+                <td width="200" valign="top" height="100%">
+                    <!-- MENU -->
+                    <!--<ui:insert name="tplMenu">
+                        <h:form>
+                            <ui:include src="/menu/perfil/menu.xhtml"/>
+                        </h:form>
+                    </ui:insert>-->
+                </td>
+                <td width="600" valign="top" height="100%">
+                    <h:button title="teste"></h:button>
+                    <h:link value="Teste"  outcome="/template/hotel.xhtml" ></h:link>
+              
+                    <!-- PRINCIPAL -->
+                    <h:form prependId="false">
+                        <ui:insert name="tplContents">
+
+                        </ui:insert>
+                    </h:form>
+                    <h:form prependId="false" >
+                        <ui:insert name="tplListagem">&nbsp;</ui:insert>
+                    </h:form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" width="800" valign="top" height="100%" align="center">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top" height="100%" align="center">
+                    <!-- PRINCIPAL -->
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <!-- HEADER -->
+                    <!--<ui:insert name="tplFooter">
+                        <ui:include src="/operation/shared/default/footer.xhtml"/>
+                    </ui:insert>-->
+                </td>
+            </tr>
+        </table>
+    </h:body>
+</html>

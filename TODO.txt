@@ -1,0 +1,2 @@
+o admin não vai cadastrar Cidade, apenas alterar. Utilizar base de dados pronta!
+Criar um Enum para os meses.
